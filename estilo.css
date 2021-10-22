@@ -1,3 +1,92 @@
+/*********** PÁGINA ************/
+html {
+    min-height: 100%; /*para não ficar com listras*/
+}
 body {
-    background: #a85757;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(#082032, #062033);
+}
+/********* LOGIN BOX *********/
+
+#caixa-login {
+    width: 350px;
+    padding: 20px;
+    position: absolute;
+    top: 50%; /*centraliza ponta do elemento*/
+    left: 50%;
+    transform: translate(-50%, -50%); /*centraliza o elemento em si*/
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.507);
+    box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.855);
+}
+
+#caixa-login h2 {
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+#caixa-login .box {
+    position: relative;
+}
+
+#caixa-login .box input {
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1.5px solid #fff;
+    margin-bottom: 30px;
+    outline: none;
+    background: transparent;
+}
+
+#caixa-login .box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#caixa-login .box input:focus ~ label,
+#caixa-login .box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #3de9d8;
+    font-size: 14px;
+  }
+
+#btn button {
+    width: 40%;
+    position: relative;
+    top: 50%; /*centraliza ponta do elemento*/
+    left: 50%;
+    transform: translate(-50%, -50%); /*centraliza o elemento em si*/
+    margin: 40px 0 20px 0;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #3de9d8;
+    border: 0.5px solid #3de9d8;
+    text-transform: uppercase;
+    background: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#btn button:hover {
+    color: #000;
+    background: #3de9d8;
+    box-shadow: 0 0 5px 5px #03e9f4;
+    border: transparent;
+    border-radius: 5px;
 }
